@@ -2,12 +2,12 @@
 function getComputerChoice () {
     let computerChoice = Math.random();
     if (computerChoice <= 1/3) {
-        computerChoice = 'rock';
+        return computerChoice = 'rock';
     } else {
         if (computerChoice <= 2/3) {
-            computerChoice = 'paper';
+            return computerChoice = 'paper';
         } else {
-            computerChoice = 'scissors';
+            return computerChoice = 'scissors';
         }
     } 
 }
