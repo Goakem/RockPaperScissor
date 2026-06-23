@@ -24,12 +24,24 @@ getHumanChoice();
 let humanScore = 0;
 let computerScore = 0;
 
+
+//Creating a function to play a round of the game
+function playRound(humanChoice,computerChoice) {
+
 // Compare human and computer Choice
     // If humanChoice is 'Rock' and computerChoice is Rock log "It is a tie! you both choose Rock" in the console
+    if ( (humanChoice === 'rock') && (computerChoice === 'rock')) {
+        console.log('It is a tie!, You both Choose Rock');
 
     //Else if humanChoice is 'Rock' and computerChoice is Paper log "You lose! Paper Beats Rock" in the console
+    } else if ((humanChoice === 'rock') && (computerChoice === 'paper')) {
+        console.log('You lose!, Paper beats Rock');
 
     // Else if humanChoice is 'Rock' and computerChoice is Scissor log "You win! Rock beats Scissors" in the console 
+    } else if ((humanChoice === 'rock' ) && (computerChoice === 'scissors')) {
+        console.log('You win!, Rock beats Scissors');
+    }
+
 
 
     //If humanChoice is 'Paper' and computerChoice is 'Rock' log "You win! Paper beats Rock" in the console
@@ -47,3 +59,6 @@ let computerScore = 0;
 
 
 // Print result
+}
+
+playRound(getHumanChoice(), getComputerChoice());
