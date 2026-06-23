@@ -2,23 +2,22 @@
 function getComputerChoice () {
     let computerChoice = Math.random();
     if (computerChoice <= 1/3) {
-        return computerChoice = 'rock';
+        computerChoice = 'rock';
     } else {
         if (computerChoice <= 2/3) {
-            return computerChoice = 'paper';
+            computerChoice = 'paper';
         } else {
-            return computerChoice = 'scissors';
+            computerChoice = 'scissors';
         }
     } 
 }
-getComputerChoice();
 
 // Get humanChoice
 function getHumanChoice () {
     let humanChoice = prompt('Enter Rock, Paper or Scissors:', '').toLowerCase();
-    console.log(humanChoice);
+
+    return humanChoice;
 }
-getHumanChoice();
 
 // Human Score and Computer Score declaration and initialization
 let humanScore = 0;
@@ -27,8 +26,9 @@ let computerScore = 0;
 
 //Creating a function to play a round of the game
 function playRound(humanChoice,computerChoice) {
-let humanChoice = getHumanChoice;
-let computerChoice = getComputerChoice;
+
+humanChoice = getHumanChoice();
+computerChoice = getComputerChoice();
 
 //  compare and give log the result on the console if any of the condition is met 
 if ((humanChoice === 'rock') && (computerChoice === 'rock')) {
