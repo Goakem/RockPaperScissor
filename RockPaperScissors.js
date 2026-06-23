@@ -20,6 +20,9 @@ function getHumanChoice () {
 }
 getHumanChoice();
 
+// Human Score and Computer Score declaration and initialization
+
+
 // Compare human and computer Choice
     // If humanChoice is 'Rock' and computerChoice is Rock log "It is a tie! you both choose Rock" in the console
 
