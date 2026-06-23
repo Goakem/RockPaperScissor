@@ -1,16 +1,19 @@
 // Get computerChoice
 function getComputerChoice () {
-    let computerChoice;
-    if (Math.random <= 1/3) {
+    let computerChoice = Math.random();
+    if (computerChoice <= 1/3) {
         computerChoice = 'rock';
     } else {
-        if (Math.random <= 2/3) {
+        if (computerChoice <= 2/3) {
             computerChoice = 'paper';
         } else {
             computerChoice = 'scissors';
         }
     } 
+    console.log(computerChoice);
 }
+getComputerChoice();
+console.log(getComputerChoice);
 // Get humanChoice
 
 // Compare human and computer Choice
