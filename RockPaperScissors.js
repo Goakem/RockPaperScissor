@@ -2,12 +2,12 @@
 function getComputerChoice () {
     let computerChoice = Math.random();
     if (computerChoice <= 1/3) {
-        console.log(computerChoice = 'rock');
+        return computerChoice = 'rock';
     } else {
         if (computerChoice <= 2/3) {
-            console.log(computerChoice = 'paper');
+            return computerChoice = 'paper';
         } else {
-            console.log(computerChoice = 'scissors');
+            return computerChoice = 'scissors';
         }
     } 
 }
@@ -27,38 +27,31 @@ let computerScore = 0;
 
 //Creating a function to play a round of the game
 function playRound(humanChoice,computerChoice) {
+let humanChoice = getHumanChoice;
+let computerChoice = getComputerChoice;
 
-// Compare human and computer Choice
-    // If humanChoice is 'Rock' and computerChoice is Rock log "It is a tie! you both choose Rock" in the console
-    if ( (humanChoice === 'rock') && (computerChoice === 'rock')) {
-        console.log('It is a tie!, You both Choose Rock');
-
-    //Else if humanChoice is 'Rock' and computerChoice is Paper log "You lose! Paper Beats Rock" in the console
-    } else if ((humanChoice === 'rock') && (computerChoice === 'paper')) {
-        console.log('You lose!, Paper beats Rock');
-
-    // Else if humanChoice is 'Rock' and computerChoice is Scissor log "You win! Rock beats Scissors" in the console 
-    } else if ((humanChoice === 'rock' ) && (computerChoice === 'scissors')) {
-        console.log('You win!, Rock beats Scissors');
-    }
-
-
-
-    //If humanChoice is 'Paper' and computerChoice is 'Rock' log "You win! Paper beats Rock" in the console
-
-    //Else if humanChoice is 'Paper' and computerChoice is 'Paper' log "It is a tie, you both choose Paper" in the console
-
-    //Else if humanChoice is 'Paper' and computerChice is 'Scissor' log "You lose!, Scissors beats Paper"
-
-
-    // If humanChoice is 'Scissors' and computerChoice is 'Rock' log "You lose!, Rock beats Scissors"
-
-    // Else if humanChoice is 'Scissors' and computerChoice is 'Paper' log "You win!, Scissors beats Rock."
-
-    // Else if humanChoice is 'Scissors' and computerChoice is 'Scissors' log "It is a tie!, You both choose Scissors"
-
-
-// Print result
+//  compare and give log the result on the console if any of the condition is met 
+if ((humanChoice === 'rock') && (computerChoice === 'rock')) {
+    console.log('It is a tie! You both pick Rock');
+} else if ((humanChoice === 'rock') && (computerChoice === 'paper' )){
+    console.log('You lose paper beats rock');
+} else if ((humanChoice === 'rock') && (computerChoice === 'scissors')) {
+    console.log('You win! rock beats scissors');
+} else if ((humanChoice === 'paper') && (computerChoice === 'rock')) {
+    console.log('You win! paper beats rock');
+} else if ((humanChoice === 'paper') && (computerChoice === 'paper')) {
+    console.log('It is a tie! You both pick paper');
+} else if ((humanChoice === 'paper') && (computerChoice === 'scissors')) {
+console.log('You lose! scissors beats paper');
+} else if ((humanChoice === 'scissors') && (computerChoice === 'rock')) {
+    console.log('You lose! rock beats scissors');
+} else if ((humanChoice === 'scissors') && (computerChoice === 'paper')) {
+    console.log('You win! scissors beats paper');
+} else if ((humanChoice === 'scissors') && (computerChoice === 'scissors')) {
+    console.log('It is a tie! You both pick scissors');
+} else {
+    console.log(`Pls pick between 'Rock' 'Paper' or 'Scissors'`);
 }
 
-playRound(getHumanChoice(), getComputerChoice());
+}
+playRound();
