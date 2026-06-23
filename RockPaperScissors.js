@@ -2,21 +2,23 @@
 function getComputerChoice () {
     let computerChoice = Math.random();
     if (computerChoice <= 1/3) {
-        computerChoice = 'rock';
+        console.log(computerChoice = 'rock');
     } else {
         if (computerChoice <= 2/3) {
-            computerChoice = 'paper';
+            console.log(computerChoice = 'paper');
         } else {
-            computerChoice = 'scissors';
+            console.log(computerChoice = 'scissors');
         }
     } 
 }
+getComputerChoice();
 
 // Get humanChoice
 function getHumanChoice () {
     let humanChoice = prompt('Enter Rock, Paper or Scissors:', '').toLowerCase();
     console.log(humanChoice);
 }
+getHumanChoice();
 
 // Compare human and computer Choice
     // If humanChoice is 'Rock' and computerChoice is Rock log "It is a tie! you both choose Rock" in the console
