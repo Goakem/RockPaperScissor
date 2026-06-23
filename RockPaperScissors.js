@@ -1,5 +1,16 @@
 // Get computerChoice
-
+function getComputerChoice () {
+    let computerChoice;
+    if (Math.random <= 1/3) {
+        computerChoice = 'rock';
+    } else {
+        if (Math.random <= 2/3) {
+            computerChoice = 'paper';
+        } else {
+            computerChoice = 'scissors';
+        }
+    } 
+}
 // Get humanChoice
 
 // Compare human and computer Choice
