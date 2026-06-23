@@ -13,6 +13,10 @@ function getComputerChoice () {
 }
 
 // Get humanChoice
+function getHumanChoice () {
+    let humanChoice = prompt('Enter Rock, Paper or Scissors:', '').toLowerCase();
+    console.log(humanChoice);
+}
 
 // Compare human and computer Choice
     // If humanChoice is 'Rock' and computerChoice is Rock log "It is a tie! you both choose Rock" in the console
