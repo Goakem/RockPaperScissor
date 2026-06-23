@@ -10,10 +10,8 @@ function getComputerChoice () {
             computerChoice = 'scissors';
         }
     } 
-    console.log(computerChoice);
 }
-getComputerChoice();
-console.log(getComputerChoice);
+
 // Get humanChoice
 
 // Compare human and computer Choice
