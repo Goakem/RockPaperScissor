@@ -27,8 +27,10 @@ let computerScore = 0;
 //Creating a function to play a round of the game
 function playRound(humanChoice,computerChoice) {
 
-//  compare and give log the result on the console if any of the condition is met 
-if ((humanChoice.toLowerCase() === 'rock') && (computerChoice === 'rock')) {
+//  compare and give log the result on the console if any of the condition is met
+if (humanChoice === null) {
+    console.log('You Cancelled the game')
+}else if ((humanChoice.toLowerCase() === 'rock') && (computerChoice === 'rock')) {
     console.log('It is a tie! You both pick Rock');
 } else if ((humanChoice.toLowerCase() === 'rock') && (computerChoice === 'paper' )){
     console.log('You lose paper beats rock');
