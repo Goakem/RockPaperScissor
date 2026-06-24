@@ -29,32 +29,63 @@ function playRound(humanChoice,computerChoice) {
 
 //  compare and give log the result on the console if any of the condition is met
 if (humanChoice === null) {
+
     console.log('You Cancelled the game')
+
 }else if ((humanChoice.toLowerCase() === 'rock') && (computerChoice === 'rock')) {
+
     console.log('It is a tie! You both pick Rock');
+
 } else if ((humanChoice.toLowerCase() === 'rock') && (computerChoice === 'paper' )){
+
     console.log('You lose paper beats rock');
+    ++computerScore;
+
 } else if ((humanChoice.toLowerCase() === 'rock') && (computerChoice === 'scissors')) {
+
     console.log('You win! rock beats scissors');
+    ++humanScore;
+
 } else if ((humanChoice.toLowerCase() === 'paper') && (computerChoice === 'rock')) {
+
     console.log('You win! paper beats rock');
+    ++humanScore;
+
 } else if ((humanChoice.toLowerCase() === 'paper') && (computerChoice === 'paper')) {
+
     console.log('It is a tie! You both pick paper');
+
 } else if ((humanChoice.toLowerCase() === 'paper') && (computerChoice === 'scissors')) {
-console.log('You lose! scissors beats paper');
+
+    console.log('You lose! scissors beats paper');
+    ++computerScore;
+
 } else if ((humanChoice.toLowerCase() === 'scissors') && (computerChoice === 'rock')) {
+
     console.log('You lose! rock beats scissors');
+    ++computerScore;
+
 } else if ((humanChoice.toLowerCase() === 'scissors') && (computerChoice === 'paper')) {
+
     console.log('You win! scissors beats paper');
+    ++humanScore;
+
 } else if ((humanChoice.toLowerCase() === 'scissors') && (computerChoice === 'scissors')) {
+
     console.log('It is a tie! You both pick scissors');
+
 } else {
     console.log(`Pls pick between 'Rock' 'Paper' or 'Scissors'`);
 }
 
+console.log(`HumanScore: ${humanScore}`);
+console.log(`ComputerScore: ${computerScore}`);
+
 }
+
 
 const humanSelection = getHumanChoice();
 const computerSelection = getComputerChoice();
+
 
 playRound(humanSelection, computerSelection);
