@@ -21,19 +21,14 @@ function getHumanChoice () {
 
 //Creating a function to play a round of the game
 
-
-
-
-
-
 function playGame () {
 
     // Human Score and Computer Score declaration and initialization
     let humanScore = 0;
     let computerScore = 0;
 
-    const humanSelection = getHumanChoice();
-    const computerSelection = getComputerChoice();
+    const humanSelection = getHumanChoice;
+    const computerSelection = getComputerChoice;
 
     function playRound(humanChoice,computerChoice) {
 
@@ -95,8 +90,8 @@ function playGame () {
 
         }
 
-    for (let i = 0; i<= 5; i++) {
-        playRound(humanSelection, computerSelection);
+    for (let i = 0; i<= 4; i++) {
+        playRound(humanSelection(), computerSelection());
     }
 }
 
