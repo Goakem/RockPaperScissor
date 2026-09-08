@@ -90,9 +90,9 @@ function playGame () {
 
         }
 
-    for (let i = 0; i<= 4; i++) {
-        playRound(humanSelection(), computerSelection());
-    }
+    // for (let i = 0; i<= 4; i++) {
+    //     playRound(humanSelection(), computerSelection());
+    // }
 }
 
 playGame();
