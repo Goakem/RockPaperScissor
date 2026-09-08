@@ -84,19 +84,16 @@ const roundResult = document.querySelector('.resultPara');
 const winner = document.querySelector('.winnerResult');
 
 rockButton.addEventListener('click', () => {
-  console.log('rock was clicked!')
   let humanChoice = 'rock';
   playRound(humanChoice, getComputerChoice());
 });
 
 paperButton.addEventListener('click', () => {
-  console.log('paper was clicked!')
   let humanChoice = 'paper';
   playRound(humanChoice, getComputerChoice());
 });
 
 scissorsButton.addEventListener('click', () => {
-  console.log('scissors was clicked!')
   let humanChoice = 'scissors';
   playRound(humanChoice, getComputerChoice());
 });
